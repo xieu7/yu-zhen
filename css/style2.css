@@ -1,0 +1,126 @@
+
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+.navbar {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
+
+.navbar-brand{
+    margin-left: 30px;
+    margin-top: -5px;
+    position: relative;
+}
+
+.nav-item a{
+    color: #6f6f6f;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.nav-item a:hover{
+    color:#f0a422;
+    border-bottom: 2px solid #f0a422;
+}
+
+#header {
+    margin-bottom: 5px;
+    background-image: url(../img/header.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*把背景固定在後方*/
+    background-attachment: fixed;
+    padding: 200px 0;
+    border-radius: 0px;
+    /* margin-bottom: 0px; */
+    position: relative;
+}
+
+/*=============================================
+=                  poster                    =
+=============================================*/
+.section-title{
+    margin-top: 90px;
+    margin-bottom: 30px;
+    width: 180px;
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 5px solid #f0a422;
+    border-radius: 5px;
+    margin-left: 670px;
+    z-index: 50;
+}
+
+.po1 .description{
+   position: absolute;
+   margin-left: 400px;
+   margin-top: -198px;
+}
+
+.po1 .description h3{
+   color:#f0a422; 
+}
+.po2 .description{
+   position: absolute;
+   margin-left: 400px;
+   margin-top: -220px;
+}
+
+.po2 .description h3{
+   color:#f0a422; 
+}
+.po3 .description{
+   position: absolute;
+   margin-left: 400px;
+   margin-top: -246px;
+}
+
+.po3 .description h3{
+   color:#f0a422; 
+}
+.po4 .description{
+   position: absolute;
+   margin-left: 400px;
+   margin-top: -196px;
+}
+
+.po4 .description h3{
+   color:#f0a422; 
+}
+
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: #f0a422;
+}
+
+

@@ -1,0 +1,124 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+.navbar {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
+
+.navbar-brand{
+    margin-left: 30px;
+    margin-top: -5px;
+    position: relative;
+}
+
+.nav-item a{
+    color: #6f6f6f;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.nav-item a:hover{
+    color:#f0a422;
+    border-bottom: 2px solid #f0a422;
+}
+
+#header {
+    margin-bottom: 5px;
+    background-image: url(../img/header.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*把背景固定在後方*/
+    background-attachment: fixed;
+    padding: 200px 0;
+    border-radius: 0px;
+    /* margin-bottom: 0px; */
+    position: relative;
+}
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: grayscale(100%);
+    /*transition: all .5s ease;*/
+}
+
+[id^='galleryImage']>.gallery-text {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+    /*transition: all .5s ease;*/
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.gallery-text {
+    opacity: 1;
+    font-size: 22px;
+    transition: all .5s ease-in-out;
+}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/product/fit01.png');
+}
+
+#galleryImage2 {
+    background-image: url('../img/product/fit02.png');
+}
+
+#galleryImage3 {
+    background-image: url('../img/product/fit03.png');
+}
+
+#galleryImage4 {
+    background-image: url('../img/product/fit04.png');
+}
+
+#galleryImage5 {
+    background-image: url('../img/product/fit05.png');
+}
+
+#galleryImage6 {
+    background-image: url('../img/product/fit06.png');
+}
+
+#galleryImage7 {
+    background-image: url('../img/product/fit07.png');
+}
+
+#galleryImage8 {
+    background-image: url('../img/product/fit08.png');
+}
